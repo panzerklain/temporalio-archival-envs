@@ -1,1 +1,22 @@
-# temporalio-archival-envs
+# temporalio-server
+
+This repo build a temporalio/server docker image, which contains config_template.yaml with customizable archival parameters for S3 store.
+
+Used environment variables:
+
+| Name | Default |
+| :--------------------------------------------------- | :---------: |
+| TEMPORAL_ARCHIVAL_HISTORY_STATE | `disabled` |
+| TEMPORAL_ARCHIVAL_HISTORY_ENABLEREAD | `true` |
+| TEMPORAL_ARCHIVAL_HISTORY_S3STORE_REGION | unset |
+| TEMPORAL_ARCHIVAL_HISTORY_S3STORE_ENDPOINT | unset |
+| TEMPORAL_ARCHIVAL_HISTORY_S3STORE_LOGLEVEL | 0 |
+| TEMPORAL_ARCHIVAL_VISIBILITY_STATE | `disabled` |
+| TEMPORAL_ARCHIVAL_VISIBILITY_ENABLEREAD | `true` |
+| TEMPORAL_ARCHIVAL_VISIBILITY_S3STORE_REGION | unset |
+| TEMPORAL_ARCHIVAL_VISIBILITY_S3STORE_ENDPOINT | unset |
+| TEMPORAL_ARCHIVAL_VISIBILITY_S3STORE_LOGLEVEL | 0 |
+| TEMPORAL_NAMESPACEDEFAULTS_ARCHIVAL_HISTORY_STATE | `disabled` |
+| TEMPORAL_NAMESPACEDEFAULTS_ARCHIVAL_HISTORY_URI | unset |
+| TEMPORAL_NAMESPACEDEFAULTS_ARCHIVAL_VISIBILITY_STATE | `disabled` |
+| TEMPORAL_NAMESPACEDEFAULTS_ARCHIVAL_VISIBILITY_URI | unset |
